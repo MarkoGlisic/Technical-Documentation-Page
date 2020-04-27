@@ -27,6 +27,7 @@ function selectTab(tabIndex) {
   document.getElementById('Tab8Content').style.display="none";
   document.getElementById('Tab9Content').style.display="none";
   document.getElementById('Tab10Content').style.display="none";
+  document.getElementById('Tab11Content').style.display="none";
   document.getElementById('Tab12Content').style.display="none";
   document.getElementById('Tab13Content').style.display="none";
   document.getElementById('Tab14Content').style.display="none";

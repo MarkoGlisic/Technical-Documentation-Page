@@ -1,6 +1,17 @@
+/*==================================
+        Reset and Variables
+====================================*/
+
 *, *::after, *::before {
     padding: 0;
     margin: 0;
+}
+
+:root {
+    --main-bg-color: #333;
+    --main-text-color: #ddd;
+    --main-hover-color: #818181;
+    --main-code-color: #f7f7f7;
 }
 
 /*==================================
@@ -39,8 +50,8 @@ header {
 
 .nav-icon {
     display: inline-block;
-    background-color: #333;
-    color: #ddd;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     width: 100%;
     font-size: 25px;
 }
@@ -59,7 +70,7 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: var(--main-bg-color);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -69,13 +80,13 @@ header {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 23px;
-    color: #ddd;
+    color: var(--main-text-color);
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #818181;
+  color: var(--main-hover-color);;
 }
 
 .sidenav .closebtn {
@@ -84,7 +95,7 @@ header {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  color: #ddd;
+  color: var(--main-text-color);
 }
 
 /*==================================
@@ -117,12 +128,16 @@ li {
 }
 
 code {
+    width: 100%;
     display: block;
-    background-color: #f7f7f7;
+    background-color: var(--main-code-color);
     padding: 5px;
     margin: 10px 0;
 }
 
+.reference-link {
+    text-decoration: none;
+}
 
 /*==================================
            Media Queries
